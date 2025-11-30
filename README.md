@@ -1,18 +1,19 @@
-echilon-dotfiles
+⚠️ IMPORTANT: THIS IS FOR A FRESH INSTALL OF VANILLA ARCH HYPRLAND. DO NOT ATTEMPT THIS ON CACHY OR THE LIKE. 
+
 
 This is vibe coded, so i'm not entirely sure if she works or not yet. It's mainly for a friend of mine, so once he tests, i'll update as needed. 
 
+The bar comes from Noctalia, it's amazing! All credit goes to them - https://github.com/noctalia-dev/noctalia-shell
 
 
 ⚠️ IMPORTANT: Customization Required
+
 
 These dotfiles are provided as a template. You must review and customize several files to match your system paths, desired aesthetics, and hardware setup.
 
 Key Customization Points:
 
 File/Section
-
-Customization Needed
 
 hypr/hyprland.conf
 
@@ -22,9 +23,13 @@ hypr/keybindings.conf
 
 Script Paths: Ensure the paths to executable scripts (like keyhints or other utility scripts) are correct for your system setup.
 
-kitty/kitty.conf
+custom wallpaper for wallpaper engine needs assets added & downloaded workshop file path as well
 
-Theming: The default theme settings are minimal. Add your preferred color schemes and font settings here.
+View linux-wallpaper engine's github here for more details: https://github.com/Almamu/linux-wallpaperengine
+[I WILL NOT PROVIDE SUPPORT FOR WALLPAPER ENGINE]
+
+
+Theming: The default theme settings are minimal. Add your preferred color schemes and font settings there.
 
 fastfetch/config.jsonc
 
@@ -32,11 +37,11 @@ Theming/Images: If you want a specific image or ASCII art, update the relevant s
 
 📦 What's Included?
 
+
+
 This repository provides configurations for a complete, customized Hyprland experience:
 
-Component
-
-Description
+Components for Hyprland
 
 hypr
 
@@ -62,7 +67,7 @@ install.sh
 
 Automates package installation and configuration deployment.
 
-uninstall-dots.sh
+uninstall.sh
 
 Reverts changes and restores previous configurations (if a backup exists).
 
