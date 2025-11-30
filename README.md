@@ -1,144 +1,72 @@
-⚠️ IMPORTANT: THIS IS FOR A FRESH INSTALL OF VANILLA ARCH HYPRLAND. DO NOT ATTEMPT THIS ON CACHYOS OR THE LIKE. 
+<p align="center">
+<!-- Placeholders for GitHub Shields. Update the source URLs after your first push! -->
+<img src="https://img.shields.io/github/last-commit/Echilonvibin/echilon-dotfiles" alt="Last Commit">
+<img src="https://img.shields.io/github/commit-activity/w/Echilonvibin/echilon-dotfiles" alt="Commit Activity">
+</p>
 
+# echilon-dotfiles
 
-This is vibe coded, so far, everything is working. More testing will be done - use at your own risk. 
+A collection of custom configuration files (dotfiles) for the **Hyprland** Wayland compositor, managed by **Echilon & Tonekneeo**.
 
-The bar comes from Noctalia, it's amazing! All credit goes to them - https://github.com/noctalia-dev/noctalia-shell
+---
 
+## ⚠️ Important Warnings
 
-⚠️ IMPORTANT: Customization Required
+### Fresh Install & Liability
 
+**THIS IS FOR A FRESH INSTALL OF VANILLA ARCH HYPRLAND.** Do not attempt this on derivative distributions (like CachyOS or similar).
 
-These dotfiles are provided as a template. You must review and customize several files to match your system paths, desired aesthetics, and hardware setup.
+This configuration is currently "vibe coded" and is in active development. While everything is working so far, **more testing will be done — use at your own risk.**
 
-Key Customization Points:
+### Credits
 
-File/Section
+The application bar (`noctalia-shell-git`) is based on the amazing work by Noctalia. All credit for the bar goes to them:
+<https://github.com/noctalia-dev/noctalia-shell>
 
-hypr/hyprland.conf
+---
 
-Monitors: The current config uses monitor=,preferred,auto,1 for automatic detection. If you need specific resolutions, refresh rates, or scaling (e.g., HiDPI), you must uncomment and modify the manual monitor= examples. You could also use nwg-displays to configure it how you want, and then export it into the hyprland.conf file. 
+## ⚙️ Customization Required
 
-hypr/keybindings.conf
+These dotfiles are provided as a *template*. You **must** review and customize several files to match your system paths, desired aesthetics, and hardware setup.
 
-Script Paths: Ensure the paths to executable scripts (like keyhints or other utility scripts) are correct for your system setup.
+### Key Customization Points:
 
-custom wallpaper for wallpaper engine needs assets added & downloaded workshop file path as well
+| File/Section | Customization Needed | Notes |
+| :--- | :--- | :--- |
+| **`hypr/hyprland.conf`** | Monitor setup (resolution, scaling, refresh rate). | Current config uses `monitor=,preferred,auto,1`. You can also use `nwg-displays` to configure and export settings. |
+| **`hypr/keybindings.conf`** | Script execution paths. | Ensure the paths to executable scripts (like `keyhints` or other utility scripts) are correct. |
+| **Wallpaper Engine** | Custom wallpaper assets and workshop path. | View the [linux-wallpaperengine GitHub](https://github.com/Almamu/linux-wallpaperengine) for details. **🚨 I WILL NOT PROVIDE SUPPORT FOR WALLPAPER ENGINE 🚨** |
+| **Theming** | Color schemes and font settings. | Default theme settings are minimal. Add your preferred settings here. |
+| **`fastfetch/config.jsonc`** | Theming/Images. | Update for specific image or ASCII art display. |
 
-View linux-wallpaper engine's github here for more details: https://github.com/Almamu/linux-wallpaperengine
-[I WILL NOT PROVIDE SUPPORT FOR WALLPAPER ENGINE]
+---
 
-
-Theming: The default theme settings are minimal. Add your preferred color schemes and font settings there.
-
-fastfetch/config.jsonc
-
-Theming/Images: If you want a specific image or ASCII art, update the relevant settings in this file.
-
-📦 What's Included?
-
-
+## 📦 What's Included?
 
 This repository provides configurations for a complete, customized Hyprland experience:
 
-Components for Hyprland
+| Component | Description |
+| :--- | :--- |
+| **`hypr`** | Main Hyprland configuration, keybinds, and workspace setup. **(Requires customization)** |
+| **`kitty`** | Configuration for the primary terminal emulator. |
+| **`fish`** | Configuration for the Fish shell and Starship prompt. |
+| **`rofi`** | Custom themes and scripts for the application launcher. |
+| **`fastfetch`** | Configuration for displaying system information. |
+| **`install.sh`** | Automates package installation and configuration deployment. |
+| **`uninstall.sh`** | Reverts changes and restores previous configurations (if a backup exists). |
 
-hypr
+---
 
-Main Hyprland configuration, keybinds, and workspace setup. (Requires customization)
+## 🚀 Installation
 
-kitty
+### Prerequisites
 
-Configuration for the primary terminal emulator.
+You must be running an **Arch-based Linux distribution** and have basic development tools installed (`git` is required for cloning).
 
-fish
+### Step 1: Clone the Repository
 
-Configuration for the Fish shell and Starship prompt.
+Open your terminal and use `git clone` to download the entire repository:
 
-rofi
-
-Custom themes and scripts for the application launcher.
-
-fastfetch
-
-Configuration for displaying system information.
-
-install.sh
-
-Automates package installation and configuration deployment.
-
-uninstall.sh
-
-Reverts changes and restores previous configurations (if a backup exists).
-
-🚀 Installation
-
-Prerequisites
-
-You must be running an Arch-based Linux distribution and have basic development tools installed.
-
-Step 1: Download the Installer Script
-
-Open your terminal and use wget to download the installation script directly to your home directory:
-
-```
-git clone https://github.com/Echilonvibin/echilon-dotfiles.git
-
-```
-
-```
+```bash
+git clone [https://github.com/Echilonvibin/echilon-dotfiles.git](https://github.com/Echilonvibin/echilon-dotfiles.git)
 cd ./echilon-dotfiles
-```
-
-Step 2: Run the Installation
-
-Grant the script executable permission and run it. The script will handle everything: installing all required packages (including yay if necessary) 
-and deploying the configuration files.
-
-```
-chmod +x install.sh
-./install.sh
-```
-
-⚠️ Important Notes
-
-Backup: The installer automatically backs up any existing configuration directories (e.g., ~/.config/hypr) by renaming them (e.g., ~/.config/hypr.bak.YYYYMMDDHHMMSS).
-
-Dependencies: The script uses sudo pacman and yay to install all necessary packages.
-
-Permissions: The script automatically sets execution permissions for the Hyprland scripts (e.g., keyhints).
-
-Step 3: Finalize Setup
-
-After the script completes:
-
-Review the Customization Points detailed above.
-
-Reboot your system.
-
-At your login manager (SDDM, GDM, etc.), ensure you select the Hyprland session before logging in.
-
-🗑️ Uninstallation
-
-If you need to revert to your previous setup, use the uninstall-dots.sh script.
-
-Step 1. Run the installer (comes with the clone of the repo)
-
-Grant permissions and execute the script.
-```
-chmod +x uninstall.sh
-```
-
-```
-./uninstall.sh
-```
-
-What the Uninstaller Does:
-
-Restores Backups: It removes the symlinks pointing to this repository and restores your original configuration files from the timestamped .bak. directories created during installation.
-
-Deletes Repository: It deletes the cloned repository located at ~/Source/echilon-dotfiles.
-
-Manual Package Removal: It does not remove the packages (Hyprland, Kitty, Rofi, etc.). The script provides manual commands you must run if you wish to uninstall the software.
-
-Once uninstallation is complete, log out and select your preferred desktop environment.
