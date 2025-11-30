@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Define the path to your Python script
-KEYHINTS_SCRIPT="/home/echilon/.config/hypr/Scripts/keyhints"
+KEYHINTS_SCRIPT="~/.config/hypr/Scripts/keyhints"
 
 # --- Rofi Command Arguments ---
 # -d '      ': CRITICAL! Sets the delimiter back to exactly SIX spaces.
