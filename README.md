@@ -29,6 +29,8 @@ Grant Script Permissions: Ensure the Hyprland scripts (used for your Rofi keybin
 
 
 ```chmod +x ~/.config/hypr/Scripts/keyhints```
+
+
 ```chmod +x ~/.config/hypr/Scripts/show-keyhints.sh```
 
 Reboot/Log In: Log out of the current session. At the Display Manager (Login Screen, e.g., GDM, LightDM, SDDM), select the Hyprland session and log back in.
