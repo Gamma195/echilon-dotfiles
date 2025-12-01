@@ -29,6 +29,7 @@ PACKAGES=(
     pavucontrol    # PulseAudio/PipeWire volume control
     kate           # KDE Advanced Text Editor
     gedit          # GNOME Text Editor
+    nemo           # File Manager (Added per user request)
 )
 
 REPO_DIR=$(pwd)
@@ -141,5 +142,5 @@ echo "--------------------------------------------------------"
 echo "Next Steps (Step 3):"
 echo "1. Review customization points in README.md."
 echo "2. Reboot your system."
-"3. Select the Hyprland session at your login manager.
---------------------------------------------------------"
+echo "3. Select the Hyprland session at your login manager."
+echo "--------------------------------------------------------"
