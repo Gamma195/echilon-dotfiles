@@ -74,3 +74,7 @@ git clone https://github.com/Echilonvibin/echilon-dotfiles.git
 ```
 cd ./echilon-dotfiles
 ```
+
+```
+,/install.sh
+```
