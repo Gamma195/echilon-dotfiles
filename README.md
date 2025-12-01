@@ -69,5 +69,9 @@ Open your terminal and use `git clone` to download the entire repository:
 
 ```bash
 git clone https://github.com/Echilonvibin/echilon-dotfiles.git
+```
 
+```
 cd ./echilon-dotfiles
+
+```
