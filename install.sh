@@ -41,7 +41,7 @@ install_yay() {
     if ! command -v yay &> /dev/null; then
         echo "yay not found. Installing yay..."
         sudo pacman -S --needed git base-devel
-        git clone https://aur.archlinux.org/yay.git /tmp/yay
+        git clone [https://aur.archlinux.org/yay.git](https://aur.archlinux.org/yay.git) /tmp/yay
         (cd /tmp/yay && makepkg -si --noconfirm)
         rm -rf /tmp/yay
     else
@@ -53,20 +53,10 @@ install_yay() {
 deploy_configs() {
     echo "Deploying configuration files..."
     
-    # List of configuration directories in the repository (Source) and their target names (Target)
-    # ASSUMPTION: Source directories in the repository are capitalized (e.g., "Hypr")
-    #             Target directories in ~/.config must be lowercase (e.g., "hypr")
-    
-    declare -A component_map=(
-        ["Hypr"]="hypr"
-        ["Kitty"]="kitty"
-        ["Rofi"]="rofi"
-        ["Fastfetch"]="fastfetch"
-        ["Fish"]="fish"
-    )
-
-    for SOURCE_NAME in "${!component_map[@]}"; do
-        TARGET_NAME="${component_map[$SOURCE_NAME]}"
+    # Iterate over the configuration directory names (all lowercase in the repo)
+    for component in hypr kitty rofi fastfetch fish; do
+        SOURCE_NAME="$component" 
+        TARGET_NAME="$component" 
         
         SOURCE_PATH="$REPO_DIR/$SOURCE_NAME"
         TARGET_PATH="$CONFIG_DIR/$TARGET_NAME"
@@ -74,7 +64,7 @@ deploy_configs() {
         # Check 1: Ensure the source directory (in the repo) exists
         if [ ! -d "$SOURCE_PATH" ]; then
             echo "Error: Source configuration directory '$SOURCE_NAME' not found in the repository at '$REPO_DIR'."
-            echo "Please ensure the folder '$SOURCE_NAME' exists in your dotfiles repository."
+            echo "Please ensure the folder '$SOURCE_NAME' exists directly in your dotfiles repository."
             continue # Skip deployment for this component
         fi
 
@@ -99,7 +89,7 @@ deploy_configs() {
 
 # Set executable permissions for scripts
 set_permissions() {
-    # CORRECTED: Uses capitalized 'Scripts'
+    # Uses capitalized 'Scripts' as confirmed by your directory structure
     SCRIPTS_PATH="$CONFIG_DIR/hypr/Scripts"
     
     # Check if the scripts directory exists before trying to run chmod
