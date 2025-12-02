@@ -14,6 +14,7 @@ PACKAGES=(
     brightnessctl  # Screen control
     pavucontrol    # PulseAudio/PipeWire volume control
     wlsunset       # Nightlight for quickshell
+    cava           # necessary for audio to prompt for visualizer
 
     # User-defined components from README.md
     kitty          # Terminal Emulator
