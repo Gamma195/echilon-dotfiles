@@ -1,34 +1,42 @@
 #!/bin/bash
 
 # --- Configuration ---
-# Define the list of packages to install using yay
+# Define the list of packages to install using yay to install from AUR
 PACKAGES=(
-    # Hyprland and core window management
-    hyprland
-    hyprlock       # Screen Locker (Added per user request)
-    
-    # User-defined components from README.md
-    kitty          # Terminal Emulator
-    rofi           # Application Launcher
-    fish           # Shell
-    fastfetch      # System Info Display
-    
-    # Bar from credits (assuming this is an AUR package)
-    noctalia-shell-git 
-    
-    # *** REQUIRED ADDITIONS FOR AUTHENTICATION/CREDENTIALS ***
+    # Core Components
     polkit-gnome   # PolicyKit authentication agent
-    gnome-keyring  # Credential storage
-    
-    # Example dependencies (adjust as needed)
+    gnome-keyring  # Credential storage  
+    hyprlock       # Locks screen, obviously. 
+    hypridle       # Turns off screen after set time
     dunst          # Notification daemon
     swaybg         # Simple wallpaper utility (used for setting wallpapers)
     xorg-xwayland  # X11 compatibility layer
     brightnessctl  # Screen control
     pavucontrol    # PulseAudio/PipeWire volume control
-    kate           # KDE Advanced Text Editor
-    gedit          # GNOME Text Editor
-    nemo           # File Manager (Added per user request)
+    wlsunset       # Nightlight for quickshell
+
+    # User-defined components from README.md
+    kitty          # Terminal Emulator
+    rofi           # Application Launcher
+    fish           # Shell
+    fastfetch      # System Info Display
+    gedit          # Gnome Advanced Text Editor
+    nemo           # File Manager  
+    bluez          # Bluetooth utlities
+    blueman        # Bluetooth utlities
+    upscayl-bin    # Upscaler for images on the fly
+    video-downloader # Download videos on your system, avoid sketchy websites! Yipee!
+    gnome-calculator # Math n stuff...
+
+
+    
+    # Bar from noctalia 
+    noctalia-shell-git
+
+    #Task Manager, Sleak
+    mission-center
+
+
 )
 
 REPO_DIR=$(pwd)
