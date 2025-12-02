@@ -14,32 +14,30 @@ PACKAGES=(
     brightnessctl  # Screen control
     pavucontrol    # PulseAudio/PipeWire volume control
     wlsunset       # Nightlight for quickshell
-
-    # User-defined components from README.md
-    kitty          # Terminal Emulator
+    noctalia-shell-git # Bar from noctalia
     rofi           # Application Launcher
     fish           # Shell
     fastfetch      # System Info Display
     gedit          # Gnome Advanced Text Editor
-    nemo           # File Manager  
+    nautilus           # File Manager  
     bluez          # Bluetooth utlities
-    blueman        # Bluetooth utlities
+    blueman        # Bluetooth utlities 
+
+)
+
+
+
+OPTIONALPKG=(
+        # User-defined components
     upscayl-bin    # Upscaler for images on the fly
     video-downloader # Download videos on your system, avoid sketchy websites! Yipee!
     gnome-calculator # Math n stuff...
     loupe          # image viewer
     gcolor3        # color picker
     protonplus     # proton manager
-    
-    
-    # Bar from noctalia 
-    noctalia-shell-git
-
-    #Task Manager, Sleak
-    mission-center
-
-
+    mission-center #Task Manager, Sleak
 )
+
 
 REPO_DIR=$(pwd)
 CONFIG_DIR="$HOME/.config"
@@ -58,6 +56,7 @@ install_yay() {
         echo "yay is already installed."
     fi
 }
+
 
 # Deploy configuration files from repo/.config to ~/.config
 deploy_configs() {
@@ -135,15 +134,31 @@ echo "Starting Hyprland Dotfiles Installation..."
 # 1. Install Yay
 install_yay
 
-# 2. Install Packages
-echo "Installing required packages via yay..."
+# 2. Install Core Packages
+echo "Installing required core packages via yay..."
+echo "installing core packages in 3..."
+echo "2..."
+echo "1!"
 yay -Syu --noconfirm "${PACKAGES[@]}"
 
-# 3. Deploy Configurations
+# 3. Function to handle optional package installation
+install_optional_packages() {
+    echo -e "\n--- Optional Packages Installation ---"
+    read -r -p "Do you want to install the optional packages? (y/N): " response
+    
+    if [[ "$response" =~ ^([yY][eE][sS]|[yY])$ ]]; then
+        echo "Installing optional packages via yay..."
+        yay -Syu --noconfirm "${OPTIONALPKG[@]}"
+    else
+        echo "Skipping optional package installation."
+    fi
+}
+
+# 4. Deploy Configurations
 deploy_configs
 deploy_local_share
 
-# 4. Set Script Permissions
+# 5. Set Script Permissions
 set_permissions
 
 echo "Installation complete!"
@@ -153,4 +168,3 @@ echo "1. Review customization points in README.md."
 echo "2. Reboot your system."
 echo "3. Select the Hyprland session at your login manager."
 echo "--------------------------------------------------------"
-
