@@ -1,11 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" version="1.1">
- <defs>
-  <style id="current-color-scheme" type="text/css">
-   .ColorScheme-Text { color:#565656; } .ColorScheme-Highlight { color:#4285f4; }
-  </style>
- </defs>
- <g transform="translate(4,4)">
-  <path style="fill:currentColor" class="ColorScheme-Text" d="M 5,5 V 8.959 A 3.5,3.5 0 0 0 5.5,9 3.5,3.5 0 0 0 9,5.5 3.5,3.5 0 0 0 8.9609,5 Z M 10.973,5 A 5.5,5.5 0 0 1 11,5.5 5.5,5.5 0 0 1 5.5,11 5.5,5.5 0 0 1 5,10.975 V 15 H 15 V 5 Z"/>
-  <path style="opacity:0.3;fill:currentColor" class="ColorScheme-Text" d="M 5.5 0 A 5.5 5.5 0 0 0 0 5.5 A 5.5 5.5 0 0 0 5 10.975 L 5 5 L 10.973 5 A 5.5 5.5 0 0 0 5.5 0 z"/>
- </g>
+<svg width="24" height="24" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style id="current-color-scheme" type="text/css">.ColorScheme-Text { color:#ebdbb2; } .ColorScheme-Highlight { color:#458588; }</style>
+  </defs>
+  <path class="ColorScheme-Text" d="m9 9v3.959a3.5 3.5 0 0 0 0.5 0.041 3.5 3.5 0 0 0 3.5-3.5 3.5 3.5 0 0 0-0.0391-0.5zm5.973 0a5.5 5.5 0 0 1 0.027 0.5 5.5 5.5 0 0 1-5.5 5.5 5.5 5.5 0 0 1-0.5-0.025v4.025h10v-10z" fill="currentColor"/>
+  <path class="ColorScheme-Text" d="m9.5 4a5.5 5.5 0 0 0-5.5 5.5 5.5 5.5 0 0 0 5 5.475v-5.975h5.973a5.5 5.5 0 0 0-5.473-5z" fill="currentColor" opacity=".3"/>
 </svg>

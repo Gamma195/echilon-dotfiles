@@ -1,12 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" version="1.1">
- <defs>
-  <style id="current-color-scheme" type="text/css">
-   .ColorScheme-Text { color:#565656; } .ColorScheme-Highlight { color:#4285f4; }
-  </style>
- </defs>
- <path style="fill:currentColor" class="ColorScheme-Text" d="M 11,11 V 12 C 11,12.28 11.1,12.54 11.28,12.72 L 12.06,13.5 11.28,14.28 C 11.1,14.46 11,14.72 11,15 V 16 H 12 C 12.28,16 12.54,15.9 12.72,15.72 L 13.5,14.94 14.28,15.72 C 14.46,15.9 14.72,16 15,16 H 16 V 15 C 16,14.72 15.9,14.46 15.72,14.28 L 14.94,13.5 15.72,12.72 C 15.9,12.54 16,12.28 16,12 V 11 H 15 C 14.72,11 14.46,11.1 14.28,11.28 L 13.5,12.06 12.72,11.28 C 12.54,11.1 12.28,11 12,11 Z"/>
- <g style="opacity:0.3">
-  <path style="fill:currentColor" class="ColorScheme-Text" d="M 5,11 V 16 16 L 8,14 10,15 V 11"/>
-  <path style="fill:currentColor" class="ColorScheme-Text" d="M 8 1 A 6 6 0 0 0 2 7 A 6 6 0 0 0 8 13 A 6 6 0 0 0 10 12.656 L 10 10.465 A 4 4 0 0 1 8 11 A 4 4 0 0 1 4 7 A 4 4 0 0 1 8 3 A 4 4 0 0 1 12 7 A 4 4 0 0 1 10.645 10 L 13.195 10 A 6 6 0 0 0 14 7 A 6 6 0 0 0 8 1 z M 8 4 A 3 3 0 0 0 5 7 A 3 3 0 0 0 8 10 A 3 3 0 0 0 11 7 A 3 3 0 0 0 8 4 A 3 3 0 0 0 8 4 z"/>
- </g>
+<svg width="16" height="16" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style id="current-color-scheme" type="text/css">.ColorScheme-Text { color:#ebdbb2; } .ColorScheme-Highlight { color:#458588; }</style>
+  </defs>
+  <path class="ColorScheme-Text" d="m11 11v1c0 0.28 0.1 0.54 0.28 0.72l0.78 0.78-0.78 0.78c-0.18 0.18-0.28 0.44-0.28 0.72v1h1c0.28 0 0.54-0.1 0.72-0.28l0.78-0.78 0.78 0.78c0.18 0.18 0.44 0.28 0.72 0.28h1v-1c0-0.28-0.1-0.54-0.28-0.72l-0.78-0.78 0.78-0.78c0.18-0.18 0.28-0.44 0.28-0.72v-1h-1c-0.28 0-0.54 0.1-0.72 0.28l-0.78 0.78-0.78-0.78c-0.18-0.18-0.44-0.28-0.72-0.28z" fill="currentColor"/>
+  <path class="ColorScheme-Text" d="m8 1a6 6 0 0 0-6 6 6 6 0 0 0 3 5.18v3.82l3-2 2 1v-4.535a4 4 0 0 1-2 0.5352 4 4 0 0 1-4-4 4 4 0 0 1 4-4 4 4 0 0 1 4 4 4 4 0 0 1-1.355 3h2.551a6 6 0 0 0 0.8047-3 6 6 0 0 0-6-6zm0 3a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3z" fill="currentColor" opacity=".3"/>
 </svg>

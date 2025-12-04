@@ -1,9 +1,6 @@
-<svg width="494.59px" height="494.59px" enable-background="new 0 0 494.59 494.59" version="1.1" viewBox="0 0 494.59 494.59" xmlns="http://www.w3.org/2000/svg">
- <g fill="#555555">
-  <rect x="21.788" y="28.52" width="66.634" height="442.38"/>
-  <rect x="396.09" y="270.63" width="66.634" height="200.37"/>
-  <rect x="207.08" y="93.985" width="66.634" height="376.67"/>
-  <rect x="110.86" y="212.67" width="66.635" height="258.67"/>
-  <rect x="302.26" y="170.19" width="66.634" height="300.32"/>
- </g>
+<svg width="16" height="16" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style id="current-color-scheme" type="text/css">.ColorScheme-Text { color:#ebdbb2; } .ColorScheme-Highlight { color:#458588; }</style>
+  </defs>
+  <path class="ColorScheme-Text" d="m1 1v13.99l2 0.01465-6.288e-4 -13.99zm6 2-2.114e-4 12h2v-12zm3 3-2.12e-4 9 2 3.22e-4v-9zm-6 1-2.114e-4 8h2v-8zm9 2v6h2v-6z" fill="currentColor"/>
 </svg>

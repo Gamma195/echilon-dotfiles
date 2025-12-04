@@ -1,10 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" version="1.1">
- <defs>
-  <style id="current-color-scheme" type="text/css">
-   .ColorScheme-Text { color:#565656; } .ColorScheme-Highlight { color:#4285f4; }
-  </style>
- </defs>
- <g transform="translate(4,4)">
-  <path style="fill:currentColor" class="ColorScheme-Text" d="M 3.223,4.223 7,8 3.223,11.777 C 3.223,11.777 2.722,12.278 3.222,12.778 3.722,13.278 4.2227,12.777 4.2227,12.777 L 8,9 11.777,12.777 C 11.777,12.777 12.278,13.278 12.778,12.778 13.278,12.278 12.777,11.777 12.777,11.777 L 9,8 12.777,4.2228 C 12.777,4.2228 13.278,3.722 12.778,3.222 12.278,2.722 11.777,3.2228 11.777,3.2228 L 8,7 4.222,3.222 C 4.2227,3.2228 3.722,2.722 3.222,3.222 2.722,3.722 3.223,4.223 3.223,4.223 Z"/>
- </g>
+<svg width="24" height="24" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style id="current-color-scheme" type="text/css">.ColorScheme-Text { color:#ebdbb2; } .ColorScheme-Highlight { color:#458588; }</style>
+  </defs>
+  <path class="ColorScheme-Text" d="m7.223 8.223 3.777 3.777-3.777 3.777s-0.501 0.501-1e-3 1.001 1.001-1e-3 1.001-1e-3l3.777-3.777 3.777 3.777s0.501 0.501 1.001 1e-3 -1e-3 -1.001-1e-3 -1.001l-3.777-3.777 3.777-3.777s0.501-0.5008 1e-3 -1.001-1.001 8e-4 -1.001 8e-4l-3.777 3.777-3.778-3.778c7e-4 8e-4 -0.5-0.5-1 0s1e-3 1.001 1e-3 1.001z" fill="currentColor"/>
 </svg>

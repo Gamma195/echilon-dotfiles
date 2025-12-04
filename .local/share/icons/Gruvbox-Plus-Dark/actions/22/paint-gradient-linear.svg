@@ -1,13 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" version="1.1">
- <defs>
-  <style id="current-color-scheme" type="text/css">
-   .ColorScheme-Text { color:#565656; } .ColorScheme-Highlight { color:#4285f4; }
-  </style>
- </defs>
- <path style="opacity:0.3;fill:currentColor" class="ColorScheme-Text" d="M 1,1 H 19 V 19 H 1 Z"/>
- <path style="opacity:0.3;fill:currentColor" class="ColorScheme-Text" d="M 19,1 V 11 L 11,19 H 1 V 1 Z"/>
- <path style="opacity:0.3;fill:currentColor" class="ColorScheme-Text" d="M 19,1 V 6 L 6,19 H 1 V 1 Z"/>
- <path style="opacity:0.3;fill:currentColor" class="ColorScheme-Text" d="M 1,1 H 19 L 1,19 Z"/>
- <path style="opacity:0.3;fill:currentColor" class="ColorScheme-Text" d="M 1,1 H 14 L 1,14 Z"/>
- <path style="fill:currentColor" class="ColorScheme-Text" d="M 1,1 H 9 L 1,9 Z"/>
+<svg width="22" height="22" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style id="current-color-scheme" type="text/css">.ColorScheme-Text { color:#ebdbb2; } .ColorScheme-Highlight { color:#458588; }</style>
+  </defs>
+  <path class="ColorScheme-Text" d="m3 3h16v16h-16z" fill="currentColor" opacity=".3"/>
+  <path class="ColorScheme-Text" d="m3 3h16v10l-6 6h-10z" fill="currentColor" opacity=".3"/>
+  <path class="ColorScheme-Text" d="m3 3h16v5l-11 11h-5z" fill="currentColor" opacity=".3"/>
+  <path class="ColorScheme-Text" d="m3 3h16l-16 16z" fill="currentColor" opacity=".3"/>
+  <path class="ColorScheme-Text" d="m3 3h11l-11 11z" fill="currentColor" opacity=".3"/>
+  <path class="ColorScheme-Text" d="m3 3h6l-6 6z" fill="currentColor"/>
 </svg>

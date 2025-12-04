@@ -1,10 +1,6 @@
-<svg version="1.1" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
- <defs>
-  <style id="current-color-scheme" type="text/css">.ColorScheme-Text {
-        color:#555555;
-      }</style>
- </defs>
- <rect x="10" y="3" width="2.0118" height="10" rx="0" ry="0" fill="#555555" stroke-width="1.8311"/>
- <rect x="14" y="3" width="2" height="10" rx="0" ry="0" fill="#555555" stroke-width="1.8257"/>
- <path d="m1 3h1l6 5-6 5h-1z" fill="#555555"/>
+<svg width="16" height="16" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style id="current-color-scheme" type="text/css">.ColorScheme-Text { color:#ebdbb2; } .ColorScheme-Highlight { color:#458588; }</style>
+  </defs>
+  <path class="ColorScheme-Text" d="m1 3v10h1l5-5-5-5h-1zm7.994 0v10h2.012v-10h-2.012zm3.996 0v10h2v-10h-2z" fill="currentColor"/>
 </svg>

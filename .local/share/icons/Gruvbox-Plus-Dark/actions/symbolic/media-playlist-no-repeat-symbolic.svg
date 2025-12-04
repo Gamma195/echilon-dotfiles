@@ -1,4 +1,7 @@
 <svg width="16" height="16" version="1.1" xmlns="http://www.w3.org/2000/svg">
- <path d="m6 1v0.75586l2.9961 2.9961 1.0039-0.75195-4-3zm-2 2c-1.662 0-3 1.338-3 3v4c0 1.662 1.338 3 3 3h8c0.68069 0 1.3043-0.22821 1.8066-0.60742l-1.457-1.457c-0.10878 0.040377-0.22644 0.064453-0.34961 0.064453h-8c-0.554 0-1-0.446-1-1v-4c0-0.554 0.446-1 1-1h2v2l1.3789-1.0352-2.9648-2.9648h-0.41406zm7 0v2h1c0.554 0 1 0.446 1 1v2.7578l1.9199 1.9199c0.050134-0.21816 0.080078-0.44393 0.080078-0.67773v-4c0-1.662-1.338-3-3-3h-1z" fill="#555555"/>
- <rect transform="rotate(45)" x="1.3137" y="-1" width="20" height="2" rx="0" ry="0" fill="#555555" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.6876" style="paint-order:stroke fill markers"/>
+  <defs>
+    <style id="current-color-scheme" type="text/css">.ColorScheme-Text { color:#ebdbb2; } .ColorScheme-Highlight { color:#458588; }</style>
+  </defs>
+  <path class="ColorScheme-Text" d="M 10,2 V 3.4141 L 11.586,5 10,6.5859 V 8 H 11.414 L 13,6.4141 14.586,8 H 16 V 6.5859 L 14.414,5 16,3.4141 V 2 H 14.586 L 13,3.5859 11.414,2 Z" fill="currentColor"/>
+  <path class="ColorScheme-Text" d="m5 2v2h-2c-2 0-2 2-2 2v6s0 2 2 2h10c2 0 2-2 2-2v-2h-2v2h-10v-6h2v2l4-3-4-3z" fill="currentColor" opacity=".3"/>
 </svg>
