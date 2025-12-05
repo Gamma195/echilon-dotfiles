@@ -73,7 +73,7 @@ PACKAGES=(
 )
 
 OPTIONALPKG=(
-    upscayl-desktop-git               # Upscaler for images on the fly
+    upscayl-desktop-git       # Upscaler for images on the fly
     video-downloader          # Download videos on your system, avoid sketchy websites! Yipee!
     mission-center            # Task Manager, Sleek
     protonplus                # Proton manager
